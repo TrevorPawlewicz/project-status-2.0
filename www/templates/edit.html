@@ -1,0 +1,19 @@
+<ion-view view-title="Edit Project Status">
+    <ion-content>
+        <div class="list card">
+            <div class="item item-input">
+                <!-- ng-model = 2-way binding: read/write -->
+                <input type="text" placeholder="Title"
+                    ng-model="note.title">
+            </div>
+            <div class="item item-input">
+                <textarea rows="5" placeholder="Description"
+                    ng-model="note.description"></textarea>
+            </div>
+        </div>
+        <div class="padding">
+            <button class="button button-block button-positive"
+                ng-click="save()">Save</button>
+        </div>
+    </ion-content>
+</ion-view>
